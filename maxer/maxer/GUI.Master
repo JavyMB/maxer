@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GUI.Master.cs" Inherits="GUI" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>APLICACION MAXER SOLUTONS</title>
+    <link href="css/estilo.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menuPrincipal">
+            <ul>
+                <li><asp:ImageButton ID="ImgBtnMapa" runat="server" Height="64px" Width="64px" ImageUrl="~/imagenes/maps-icono.png" BorderStyle="None" BorderWidth="0px" /></li>
+                <li><asp:ImageButton ID="ImgBtnReportes" runat="server" Height="64px" Width="64px" ImageUrl="~/imagenes/reportes-icono.png" OnClick="ImgBtnReportes_Click" BorderStyle="None" BorderWidth="0px" /></li>
+                <li><asp:ImageButton ID="ImgBtnSalir" runat="server" Height="64px" Width="64px" ImageUrl="~/imagenes/unidades-icono.png" BorderStyle="None" BorderWidth="0px" /></li>
+            </ul>
+        </div>
+    <div id="contenidoPrincipal">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="footer"><p style="text-align: center">Derechos reservados Maxer Solutions</p></div>
+    </form>
+</body>
+</html>
