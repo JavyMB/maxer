@@ -42,13 +42,11 @@
             </asp:SqlDataSource>
         </div>
         <div id="estatus">
-            <h2>Estatus de la unidad :</h2>
-
+            <h3>Estatus de la unidad :</h3>
         </div>
         <div id="odometro">
             <h3>Odometro :</h3>
         </div>
-
     </div>
     
     <div id="panelCentral">

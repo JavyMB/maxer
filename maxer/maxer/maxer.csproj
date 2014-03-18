@@ -28,6 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -59,9 +60,6 @@
   <ItemGroup>
     <Content Include="acceso.aspx" />
     <Content Include="css\estilo.css" />
-    <Content Include="GoogleMapAPIWrapper.js" />
-    <Content Include="GoogleMapForASPNet.ascx" />
-    <Content Include="GService.asmx" />
     <Content Include="imagenes\maps-icono.png" />
     <Content Include="imagenes\reportes-icono.png" />
     <Content Include="imagenes\unidades-icono.png" />
@@ -81,11 +79,6 @@
     <Content Include="App_Code\GService.cs">
       <SubType>Component</SubType>
     </Content>
-    <Compile Include="GoogleMapForASPNet.ascx.cs">
-      <DependentUpon>GoogleMapForASPNet.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GoogleObject.cs" />
     <Compile Include="GUI.Master.cs">
       <DependentUpon>GUI.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
